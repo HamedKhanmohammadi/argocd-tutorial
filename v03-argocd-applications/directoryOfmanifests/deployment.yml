@@ -6,7 +6,7 @@ metadata:
     helm.sh/chart: nginx-0.1.0
     app.kubernetes.io/name: nginx
     app.kubernetes.io/instance: nginx
-    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/version: "1.29.0"
     app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
@@ -27,7 +27,7 @@ spec:
         - name: nginx
           securityContext:
             {}
-          image: "nginx:1.16.0"
+          image: "nginx:1.29.0"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
